@@ -8,7 +8,7 @@
 // 1. DEFINISCO ARRAY MAIL-LIST E VARIABILE DA VERIFICARE = FALSE.
 
 const mailList = ['Elisa@gmail.com', 'Eva@libero.it', 'Lavinia@yahoo.it', 'Vittoria@aruba.pec'];
-let validMail = false; 
+let emailFound = false; 
 
 // 2. CHIEDO ALL'UTENTE LA SUA MAIL TRAMITE PROMPT.
 
@@ -22,7 +22,7 @@ let yourMail = prompt('Inserisci la tua mail');
 
 for (let i = 0; i < mailList.length; i++) {
     if (yourMail === mailList[i]) {
-        validMail = true;
+        emailFound = true;
     }
 }
 
@@ -30,8 +30,8 @@ for (let i = 0; i < mailList.length; i++) {
 // 6. FINITO L'INTERO CICLO, SE LA CONDIZIONE E' TRUE, STAMPERO' IL MESSAGGIO ADEGUATO (ALERT: 'BENTORNATO!'). 
 // 7. FINITO L'INTERO CICLO, SE LA CONDIZIONE E' FALSE, STAMPERO' IL MESSAGGIO ADEGUATO (ALERT: 'ATTENZIONE, CREARE UNA NUOVA MAIL').
 
-if (validMail) {
-    alert("Bentornato");
+if (emailFound) {
+    alert("Bentornato!");
 } else {
     alert("Attenzione, non esiste alcuna casella mail collegata all'indirizzo immesso!");
 }
