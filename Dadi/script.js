@@ -6,11 +6,13 @@
 const outputHtml = document.querySelector('.result');
 
 // 1. CREO VARIABILE CON MATH.FLOOR (NR. RANDOM A CUI ASSEGNO VALORE MAX 6) PER TURNO DADO GIOCATORE E LA STAMPO IN CONSOLE.
-let humanNumber = Math.floor(Math.random() * 6); 
+// aggiungo +1 per rientrare nel range del 6 (altrimenti i numeri andrebbero da 0 a 5)
+let humanNumber = Math.floor(Math.random() * 6) + 1; 
 console.log(humanNumber);
 
 // 2. CREO VARIABILE CON MATH.FLOOR (NR. RANDOM A CUI ASSEGNO VALORE MAX 6) PER TURNO DADO PC E LA STAMPO IN CONSOLE.
-let computerNumber = Math.floor(Math.random() * 6);
+// aggiungo +1 per rientrare nel range del 6 (altrimenti i numeri andrebbero da 0 a 5)
+let computerNumber = Math.floor(Math.random() * 6) + 1;
 console.log(computerNumber);
 
 // 3. CREO CONDIZIONE IF PER DECRETARE IL VINCITORE IN BASE AL TIRO DEL DADO: 
