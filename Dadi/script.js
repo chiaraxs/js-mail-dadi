@@ -19,18 +19,18 @@ console.log(computerNumber);
 if (humanNumber > computerNumber) {
     // SE IL DADO DEL GIOCATORE > DADO PC -> HAI VINTO!
     console.log('Hai vinto!'); 
-    alert(outputHtml.innerHTML = 'Hai vinto!');
+    alert(outputHtml.innerHTML = `Hai vinto! Il tuo punteggio è ${humanNumber}! Il punteggio dell'avversario è ${computerNumber}!`);
 }
 
 else if (humanNumber < computerNumber) {
     // SE IL DADO DEL GIOCATORE < DADO PC -> OPS, HAI PERSO!
     console.log('Ops, hai perso! Ritenta!');
-    alert(outputHtml.innerHTML = 'Ops, hai perso! Ritenta!');
+    alert(outputHtml.innerHTML = `Ops, hai perso! Il tuo punteggio è ${humanNumber}! Il punteggio dell'avversario è ${computerNumber}! Ritenta!`);
 }   
 
 else {
     // SE DADO DEL GIOCATORE = DADO PC -> HAI PAREGGIATO, RITENTA!
     console.log('Hai pareggiato! Ritenta per vincere!')
-    alert(outputHtml.innerHTML = 'Hai pareggiato! Ritenta per vincere!');
+    alert(outputHtml.innerHTML = `Hai pareggiato con ${humanNumber}! Ritenta per vincere!`);
 }
 
